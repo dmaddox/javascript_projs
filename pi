@@ -1,0 +1,11 @@
+var decimal = prompt('Enter a number between 0 and 20. This program will round PI to that many decimal places.'); // prompt user for numer
+while (decimal > 20 || decimal < 0) {
+  decimal = prompt('Sorry, ' + decimal + ' won\'t work. You must enter a number between 0 and 20.');
+};
+  
+var pi = Math.PI; // sets pi to pi
+var roundedPi = pi.toFixed(decimal); // round pi to the decimal point entered by user
+
+
+roundedPi = pi.toFixed(decimal);
+console.log(roundedPi);
